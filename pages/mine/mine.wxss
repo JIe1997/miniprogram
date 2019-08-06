@@ -1,0 +1,6 @@
+/* pages/mine/mine.wxss */
+.login-btn{
+  background: transparent;border: none;
+}
+.login-btn::after,
+.login-btn::before{border: 0;}

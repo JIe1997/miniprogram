@@ -1,0 +1,9 @@
+<!--index.wxml-->
+
+<view class="container">
+  <image src="/images/sds.png" mode="widthFix"></image>
+
+  <view class='index-btn {{ btnmove }}' bindtap="toSDS" >
+    <text>去许我的愿望</text>
+  </view>
+</view>

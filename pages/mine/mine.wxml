@@ -1,0 +1,18 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <view class="head-info">
+    <button class="login-btn" wx:if="{{ user }}" open-type="getUserInfo" bindgetuserinfo="getuser">
+      <image src=""></image>
+      <text>点击登录</text>
+    </button>
+    <view wx:else>
+      <image src="{{ userimg }}" mode="widthFix"></image>
+      <text>{{ username }}</text>
+    </view>
+  </view>
+  <view class="set-list">
+    <view class="setfun" bindtap="setfun">
+      <text>设置</text>
+    </view>
+  </view>
+</view>

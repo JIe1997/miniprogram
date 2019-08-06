@@ -1,0 +1,15 @@
+<!--pages/sds/sds.wxml-->
+<view class="container" >
+  <view class="tips">
+    <text>写</text>
+    <text>下</text>
+    <text>你</text>
+    <text>的</text>
+    <text>愿</text>
+    <text>望</text>
+  </view>
+  <textarea class="wish"></textarea>
+  <view class="writed">
+    <text>写好啦~</text>
+  </view>
+</view>
