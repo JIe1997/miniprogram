@@ -8,8 +8,9 @@
     <text>愿</text>
     <text>望</text>
   </view>
-  <textarea class="wish"></textarea>
-  <view class="writed">
+  <input class="zhuti" placeholder="主题" bindinput="zhuti"></input>
+  <textarea class="wish" placeholder="内容" bindinput="wish"></textarea>
+  <view class="writed" bindtap="weited">
     <text>写好啦~</text>
   </view>
 </view>

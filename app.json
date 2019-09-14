@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/sds/sds",
     "pages/index/index",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/yw/ys",
+    "pages/sds/sds"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -20,7 +21,7 @@
         "selectedIconPath": "images/home_hover.png"
       },
       {
-        "pagePath": "pages/sds/sds",
+        "pagePath": "pages/yw/ys",
         "text":"愿望树",
         "iconPath": "images/ai.png",
         "selectedIconPath": "images/ai_hover.png"

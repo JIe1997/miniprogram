@@ -1,6 +1,57 @@
 /* pages/mine/mine.wxss */
+
 .login-btn{
   background: transparent;border: none;
 }
 .login-btn::after,
 .login-btn::before{border: 0;}
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 60rpx;
+  background: rgb(253, 255, 254);
+  width:680rpx;
+  border-radius: 10rpx;
+  justify-content:flex-start;
+  box-shadow: 0 2rpx 6rpx 8rpx rgba(0,0,0,.1);
+}
+
+.userinfo button{
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  padding:20rpx 0;
+}
+
+.userinfo button text{
+  margin-left:10rpx;
+  font-size: 38rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.setfun{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40rpx;
+  background: rgb(253, 255, 254);
+  width:680rpx;
+  padding: 40rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 6rpx 8rpx rgba(0,0,0,.1);
+}
+
+.set-list text{
+  text-align: center;
+  margin-left:10rpx;
+  font-size: 38rpx;
+}

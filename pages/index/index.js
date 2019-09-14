@@ -10,7 +10,7 @@ Page({
 
   toSDS:function(){
     wx.switchTab({
-      url: '../sds/sds',
+      url: '../yw/ys',
     })
   },
 

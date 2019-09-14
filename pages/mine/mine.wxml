@@ -1,14 +1,14 @@
 <!--pages/mine/mine.wxml-->
 <view class="container">
-  <view class="head-info">
-    <button class="login-btn" wx:if="{{ user }}" open-type="getUserInfo" bindgetuserinfo="getuser">
-      <image src=""></image>
-      <text>点击登录</text>
+  <view class="userinfo">
+    <button class="login-btn" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      <image class="userinfo-avatar" src="/images/usepic.png" mode="widthFix"></image>
+      <text class="login-text">点击登录</text>
     </button>
-    <view wx:else>
-      <image src="{{ userimg }}" mode="widthFix"></image>
-      <text>{{ username }}</text>
-    </view>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
   </view>
   <view class="set-list">
     <view class="setfun" bindtap="setfun">

@@ -1,0 +1,15 @@
+<!--pages/yw/ys.wxml-->
+<view class="myyw container">
+  <text class="yw-h1">我的愿望清单</text>
+  <view class="yw-list">
+    <view class="yw-li" wx:for="{{list}}">
+      <text class="yw-title">{{item.title}}</text>
+      <text>{{item.description}}</text>
+    </view>
+  </view>
+
+  <view class="towrite" bindtap="towrite">
+    <image src="/images/write.png" mode="widthFix"></image>
+    <text>去写愿望</text>
+  </view>
+</view>
